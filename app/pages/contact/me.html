@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      我
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="me">
+
+<ion-list inset>
+    <ion-item class="mestyle" no-lines>
+        <ion-avatar class="aligmiddle">
+            <img src="{{user.headface}}">
+        </ion-avatar>
+    </ion-item>
+
+  <br/>
+    
+    <ion-item (click)="changename()">
+         <h2>昵称</h2>
+    </ion-item>
+
+    <ion-item>
+        <br/>
+        <h2>地 区</h2>
+    </ion-item>
+
+    <ion-item>
+        <h2>生日</h2>
+    </ion-item>
+
+    <ion-item>
+       <h2>相册</h2>
+    </ion-item >
+
+    <ion-item>
+        <h2>签名</h2>
+    </ion-item>
+
+    <ion-item>
+        <h2>设置</h2>
+    </ion-item>
+</ion-list>
+
+<button block danger  large (click)="loginout()">注销</button>
+</ion-content>

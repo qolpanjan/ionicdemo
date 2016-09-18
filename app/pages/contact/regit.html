@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons>
+  <button (click)="dissmiss()"><span>取消<ion-icon></ion-icon></span></button>
+  </ion-buttons>
+    <ion-title>
+      用户注册
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+		
+<ion-content>
+ 		<ion-list>
+ 			 <ion-item>
+        		<br/>
+				 <ion-item>
+            			<ion-label item-left>昵称：</ion-label>
+            			<ion-input type="text" value="" [(ngModel)]="thisuser.name"></ion-input>
+     		 	</ion-item>
+
+
+
+        		
+        		<ion-input type="text" name="usrename" placeholder="请输入你的昵称"  [(ngModel)] = "thisuser.name"></ion-input>
+    		</ion-item>
+
+			<ion-item>
+        		<br/>
+        		<ion-label item-left>
+        			手机：
+        		</ion-label>
+        		<!--   <ion-input  type="text" name="usrename" placeholder="请输入你的手机号" [(ngModel) = "thisuser.phone"></ion-input>  -->
+    		</ion-item>
+
+
+    		 <ion-item>
+			      <ion-label>生日：</ion-label>
+			      <ion-select [(ngModel)]="thisuser.birthmonth">
+			        <ion-option value="01">一月</ion-option>
+			        <ion-option value="02">二月</ion-option>
+			        <ion-option value="03">三月</ion-option>
+			        <ion-option value="04">四月</ion-option>
+			        <ion-option value="05">五月</ion-option>
+			        <ion-option value="06">六月</ion-option>
+			        <ion-option value="07">七月</ion-option>
+			        <ion-option value="08">八月</ion-option>
+			        <ion-option value="09">九月</ion-option>
+			        <ion-option value="10">十月</ion-option>
+			        <ion-option value="11">十一月</ion-option>
+			        <ion-option value="12" checked="true">十二月</ion-option>
+			      </ion-select>
+			      <ion-select [(ngModel)]="thisuser.birthday">
+			        <ion-option value="01">1</ion-option>
+			        <ion-option value="02">2</ion-option>
+			        <ion-option value="03">3</ion-option>
+			        <ion-option value="04">4</ion-option>
+			        <ion-option value="05">5</ion-option>
+			        <ion-option value="06">6</ion-option>
+			        <ion-option value="07">7</ion-option>
+			        <ion-option value="08">8</ion-option>
+			        <ion-option value="09">9</ion-option>
+			        <ion-option value="10">10</ion-option>
+			        <ion-option value="11">11</ion-option>
+			        <ion-option value="12">12</ion-option>
+			        <ion-option value="13">13</ion-option>
+			        <ion-option value="14">14</ion-option>
+			        <ion-option value="15">15</ion-option>
+			        <ion-option value="16">16</ion-option>
+			        <ion-option value="17">17</ion-option>
+			        <ion-option value="18">18</ion-option>
+			        <ion-option value="19">19</ion-option>
+			        <ion-option value="20">20</ion-option>
+			        <ion-option value="21">21</ion-option>
+			        <ion-option value="22">22</ion-option>
+			        <ion-option value="23">23</ion-option>
+			        <ion-option value="24">24</ion-option>
+			        <ion-option value="25">25</ion-option>
+			        <ion-option value="26">26</ion-option>
+			        <ion-option value="27">27</ion-option>
+			        <ion-option value="28">28</ion-option>
+			        <ion-option value="29">29</ion-option>
+			        <ion-option value="30">30</ion-option>
+			        <ion-option value="31" checked="true">31</ion-option>
+			      </ion-select>
+			      <ion-select [(ngModel)]="thisuser.birthyear">
+			        <ion-option value="1970">1970</ion-option>
+			        <ion-option value="1971">1971</ion-option>
+			        <ion-option value="1992">1992</ion-option>
+			        <ion-option value="1993">1993</ion-option>
+			     	<ion-option value="1974">1974</ion-option>
+			        <ion-option value="1975">1975</ion-option>
+			        <ion-option value="1976">1976</ion-option>
+			        <ion-option value="1977">1977</ion-option>
+			        <ion-option value="1978">1978</ion-option>
+			        <ion-option value="1979">1979</ion-option>
+			        <ion-option value="1980">1980</ion-option>
+			        <ion-option value="1981">1981</ion-option>
+			        <ion-option value="1982">1982</ion-option>
+			        <ion-option value="1983">1983</ion-option>
+			     	<ion-option value="1984">1984</ion-option>
+			        <ion-option value="1985">1985</ion-option>
+			        <ion-option value="1986">1986</ion-option>
+			        <ion-option value="1987">1987</ion-option>
+			        <ion-option value="1988">1988</ion-option>
+			        <ion-option value="1989">1989</ion-option>
+			        <ion-option value="1990">1990</ion-option>
+			        <ion-option value="1991">1991</ion-option>
+			        <ion-option value="1992">1992</ion-option>
+			        <ion-option value="1993">1993</ion-option>
+			        <ion-option checked="true" value="1994">1994</ion-option>
+			        <ion-option value="1995">1995</ion-option>
+			        <ion-option value="1996">1996</ion-option>
+			        <ion-option value="1997">1997</ion-option>
+			        <ion-option value="1998">1998</ion-option>
+			        <ion-option value="1999">1999</ion-option>
+			        <ion-option value="2000">2000</ion-option>
+			        <ion-option value="2001">2001</ion-option>
+			        <ion-option value="2002">2002</ion-option>
+			        <ion-option value="2003">2003</ion-option>
+			     	<ion-option value="2004">2004</ion-option>
+			        <ion-option value="2005">2005</ion-option>
+			        <ion-option value="2006">2006</ion-option>
+			        <ion-option value="2007">2007</ion-option>
+			        <ion-option value="2008">2008</ion-option>
+			        <ion-option value="2009">2009</ion-option>
+			        <ion-option value="2010">2010</ion-option>
+			      </ion-select>
+       		</ion-item>
+
+       		<ion-item>
+        		<br/>
+        		<ion-label item-left >
+        			签名：
+        		</ion-label>
+        		<!--   <ion-input type="text" name="usrename" placeholder="请输入你的个性签名" [(ngModel)="thisuser.about"]></ion-input>  -->
+    		</ion-item>
+
+			<ion-item >
+				<ion-label>地区：</ion-label>
+			    <!-- <ion-input type="text" name="usrename" placeholder="请输入你的地区" [(ngModel)="thisuser.region"]></ion-input>  -->
+			</ion-item>
+
+
+ 		</ion-list>
+		<br/>
+ 		<button large block secondary (click)="backlogin()">注册</button>
+</ion-content>

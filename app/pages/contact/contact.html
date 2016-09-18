@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      我
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-item>
+            <ion-label floating>用户名：</ion-label>
+            <ion-input type="text" value="" [(ngModel)]="user.username"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>密  码：</ion-label>
+            <ion-input type="password" value="" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <br/>
+
+  <button danger block  large (click)="login()">
+        <ion-icon name="log-out"></ion-icon>
+        登录
+  </button>
+  
+  <button block outline large id="login" (click)=regit()> 
+        <ion-icon name="person-add"></ion-icon>
+        还没有账号？点击注册
+  </button>
+</ion-content>
