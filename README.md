@@ -1,7 +1,7 @@
 # ionicdemo
 <h2>
 An Ionic demo <br/>
-as a demo it is onlu UI <br/>
+as a demo it is only UI <br/>
 for more devolep code please follow me :P
 </h2>
 
